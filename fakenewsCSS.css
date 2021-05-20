@@ -1,0 +1,140 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    
+    
+}
+body{
+    background-color:aliceblue;
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    font-weight: bold;;
+    align-items: center;
+    position:absolute;
+    top:0px;
+    width:100%;
+}
+/* Navigation Bar - Logo and Image */
+#logo{
+    margin:9px 8px ;
+    margin-right: 350px;
+}
+#logo img{
+    /* margin:8px ; */
+    height:100px;
+    width:250px;
+}
+
+/* Navigation Bar - List Styling */
+
+#navbar ul{
+    display:flex;
+    width:100%;
+    right:50px;
+    /* font-family: ; */
+}
+#navbar::before{
+    content:"";
+    position:sticky;
+    background-color: black;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size:28px;
+    
+}
+#navbar ul li a{
+color:white;
+display:block;
+padding:3px 22px;
+text-decoration:none;
+border-radius:20px;
+}
+#navbar ul li a:hover , #navbar ul li a.active{
+    color:black;
+    background-color: white;
+    font-size:30px ;
+}
+#home{
+    margin:300px;
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:554px;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+
+}
+#home::before{
+    content:"";
+    background:url('f1.jpeg') no-repeat center center/cover;
+    /* background-color: rgb(133, 86, 86);; */
+    position:absolute;
+    height:100%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    /* filter: invert(10%); */
+    opacity:0.89;
+
+
+    /* editing yha se bhai */
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes slider{
+    0%{
+        background: url('f1.jpeg') no-repeat center center/cover;
+    }
+    25%{
+        background: url('f2.jpeg')no-repeat center center/cover;
+    }
+    50%{
+        background: url('f3.jpeg')no-repeat center center/cover;
+    }
+    75%{
+        background: url('f4.webp')no-repeat center center/cover;
+    }
+}
+#home h1{
+    font-family: 'Bree Serif', serif;
+    color:white;
+
+    
+    text-align: center;
+    font-size: 50px;
+}
+.fakenews-container{
+    margin:72px;
+}
+#fakenews{
+    margin:34px;
+    display:flex;
+    flex-direction: column;
+}
+#fakenews .box{
+    border:2px solid black;
+    padding:34px;
+    margin:15px 25px;
+    border-radius: 28px;
+    background: grey;
+    box-shadow:10px 13px black;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
