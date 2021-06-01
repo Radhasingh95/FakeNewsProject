@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake News</title>
-    <link rel="stylesheet" href="fakenewsCSS.css">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,19 +18,19 @@
 <body>
     
     <nav id="navbar">
-        <div id="logo">
-            <!-- <img src="logo.jpg" alt="FakeNewsDetection"> -->
-        </div>
-        <div >
+        <!-- <div id="logo">
+            <img src="logo.jpg" alt="FakeNewsDetection">
+        </div> -->
+        
         <ul>
-            <li class="item" > <a href="#" class="active">Home </a> </li>
-            <li class="item"> <a href="#">Introduction </a> </li>
+            <li class="item" > <a href="#home" class="active">Home </a> </li>
+            <li class="item"> <a href="#fakenews">Introduction </a> </li>
+            <li class="item"> <a href="#login">Detection </a> </li>
             <li class="item"> <a href="#">Statistics </a> </li>
-            <li class="item"> <a href="#">Detection </a> </li>
-            <li class="item"> <a href="#">About </a> </li>
-            <li class="item"> <a href="#">Contact </a> </li>
+            <li class="item"> <a href="#">About us </a> </li>
+            <li class="item"> <a href="#">Contact us</a> </li>
         </ul>
-        </div>
+        
     </nav>
 
 <section id="home">
@@ -39,9 +39,9 @@
 </section>
 <section class="fakenews-container">
     <br>
-    
-<h1 class="h-secondary center">Fake News</h1>
-<div id="fakenews">
+    <div id="fakenews">
+        <br><br><br>
+    <h1 class="h-secondary center">Fake News</h1>
     <div class="box">
         <h2 class="h-secondary center">What is a Fake News??</h2>
         <img src="hacker.jpg" alt="">
@@ -66,6 +66,34 @@
             </p>
     </div>
 </div>
+<!-- </section>
+<section class="detection">
+    <form action="backened.php">
+        Input the url of article :
+        <br>
+        <textarea name="url" placeholder="url of news"  cols="30" rows="10"></textarea>
+    </form> -->
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section id=login>
+    <h1 class="h-primary">Detection</h1>
+    <div class="login-box ">
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="url" placeholder="Provide url here" name="" value="">
+
+        </div>
+        <input type="button" class="btn" name="" value="Submit">
+        <h2>OR</h2>
+    </div>
+    <div class="login-box">
+    <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="text"placeholder="Content of Article" name="" value="">
+
+    </div>
+    <input type="button" class="btn" name="" value="Submit">
+    </div>
 </section>
  
 </body>
