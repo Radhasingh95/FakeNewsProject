@@ -1,11 +1,11 @@
 /* html{
-    scroll-behavior:smooth;
 } */
 /* CSS Reset */
 *{
     margin:0;
     padding:0;
     
+    scroll-behavior:smooth;
     
 }
 body{
@@ -333,4 +333,146 @@ html,body{
     margin:0px;
     padding:0px;
     overflow-x:hidden;
+}
+
+
+
+#about_us{
+background:url("Assets/about_bg.jpg") no-repeat center center/cover;
+display:flex;
+flex-direction:column;
+
+}
+#about_us h1{
+    margin:37px;
+    color:white;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.about{
+display:flex;
+flex-direction:column;
+margin: 50px 34px;
+padding:17px 34px;
+justify-content: center;
+align-items: center;
+}
+
+.row{
+display:flex;
+flex-direction:row;
+margin: 23px 23px;
+}
+
+.member{
+    display:flex;
+    flex-direction:column;
+    margin: 23px 23px;
+
+}
+.member h2{
+    font-size: 28px;
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.member p{
+    font-size: 18px;
+    color:white;
+    text-align: center; 
+}
+.links{
+    display:flex;
+    flex-direction:row;
+    margin:3px;
+    align-items: center;
+    justify-content: center;
+}
+.member img{
+    width:20rem;
+    height:22rem;
+    border: 5px solid #fff;
+
+}
+.links a img{
+    width: 30px;
+    height:30px;
+    margin:5px 5px;
+    padding:4px 4px;
+    filter: invert(100%);
+    border:0px;
+}
+#contact_us{
+    display:flex;
+    /* flex-direction:column; */
+    align-items: center;
+    justify-content: center;
+    background:url("Assets/contactbg.png");
+    padding:101px 30px;
+}
+.contact{
+    margin:34px 34px;
+    padding:23px 34px;
+    border:5px solid  #130468;
+    /* background-color: #130468; */
+    
+    width:50rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact h2{
+    font-size: 59px;
+    color:white;
+    text-align: center;
+    margin:23px 34px;
+    padding:23px 34px;
+}
+
+.form{
+    display:block;
+    width: 78%;
+    overflow:hidden;
+    font-size: 20px;
+    padding:8px 0px;
+    margin:0px 10px;
+    
+    border-bottom: 1px solid #130468;
+}
+
+.form input{
+    border:none;
+    outline:none;
+    background: none;
+    color:#130468;
+    font-size: 18px;
+    width:100%;
+    float:left;
+    margin:0 10px;
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bttn{
+    display:block;
+    /* width:40%; */
+    background: none;
+    border:2px solid #130468;
+    color:white;
+    padding:5px;
+    font-size: 18px;
+    cursor:pointer;
+    margin:45px 0;
+
+}
+.bttn:hover{
+    background-color: #130468;
+    color:white;
 }
