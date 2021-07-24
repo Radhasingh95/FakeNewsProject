@@ -1,5 +1,0 @@
-Google collab notebook for staistics and model accuracy.
-https://colab.research.google.com/drive/1SH_WcXEQINV7aGWsn13GNWhyIg3-H9fb?usp=sharing
-
-Google collab notebook for model training and news prediction
-https://colab.research.google.com/drive/1ZlbLPT5H-me6o5sAyMgXOeCA9ajJSYW4?usp=sharing
