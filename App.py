@@ -28,9 +28,9 @@ def Predict():
        x_Test = np.array([request.form.get('content')])
        tfidf_test = tfidf_vectorizer.transform(x_Test)
        y_pred = model.predict(tfidf_test)
-       return render_template('Index.html', prediction=y_pred)
+       return render_template('Index.html', prediction=y_pred , scroll='detection')
 
-    return render_template('Index.html', prediction=y_pred ,scroll='login')
+    return render_template('Index.html')
 
 if __name__== "__main__":
     app.run(debug=True)

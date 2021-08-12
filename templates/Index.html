@@ -94,9 +94,13 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
 
-    <section id=detection>
+    <section id="detection">
         
-        
+        {% if scroll %}
+            <script>
+                document.getElementById('{{ scroll }}').scrollIntoView();
+            </script>
+        {% endif %}
         
         
         <div class="result" id="fake">
