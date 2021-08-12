@@ -1,5 +1,4 @@
-/* html{
-} */
+
 /* CSS Reset */
 *{
     margin:0;
@@ -7,11 +6,12 @@
     
     scroll-behavior:smooth;
     
+    
+    /* font-size: 3; */
 }
 body{
     background-color:rgb(41, 41, 41);
-    /* background-color: rgb(3,3,49); */
-    /* background-color: black; */
+   
    
 }
 
@@ -20,20 +20,19 @@ body{
     display:flex;
     font-weight: bold;;
     align-items: center;
-    /* position:absolute; */
     position:sticky;
     top:0px;
     width:100%;
+    height:4rem;
 }
 #navbar div{
     width:100%;
-}
+} 
 /* Navigation Bar - Logo and Image */
-#logo{
+ #logo{
     margin:9px 32px ;
-    /* margin-right: 50px; */
-    /* margin-left: 150px; */
-}
+     
+} 
 #logo img{
     margin:3px 6px;
     height:100px;
@@ -45,12 +44,14 @@ body{
 #navbar ul{
     display:flex;
     width:100%;
-    /* right:50px; */
-    /* font-family: ; */
+    height:5rem;
+    margin-right:0;
+    margin-top:1rem;
+    
 }
 #navbar::before{
     content:"";
-    /* position:sticky; */
+    
     position:absolute;
    
 
@@ -63,16 +64,17 @@ body{
     opacity:0.7;
 }
 
-#navbar ul li{
+#navbar ul li{ 
+    width:8rem;
     list-style:none;
-    font-size:19px;
-    
+    font-size:1.1rem; 
+    text-align: center;   
 }
 #navbar ul li a{
 color:white;
 display:block;
 
-padding:15px 22px;
+padding:1rem 0.5rem;
 text-decoration:none;
 border-radius:20px;
 }
@@ -82,8 +84,8 @@ border-radius:20px;
     
 }
 #home{
-    margin-bottom:300px;
-    margin-top: 5px;
+    margin-bottom:4rem;
+    margin-top: 3rem;
     display:flex;
     flex-direction: column;
     padding:150px 200px;
@@ -96,19 +98,13 @@ border-radius:20px;
 #home::before{
     content:"";
     background:url('../Assets/Images/slide1.jpeg') no-repeat center center/cover;
-    /* background-color: rgb(133, 86, 86);; */
-    position:absolute;
+     position:absolute;
     height:100%;
     top:0px;
     left:0px;
     width:100%;
     z-index:-1;
-    /* filter: invert(10%); */
     opacity:0.89;
-
-
-
-    /* editing yha se bhai */
     animation-name: slider;
     animation-duration: 24s;
     animation-iteration-count: infinite;
@@ -136,10 +132,8 @@ border-radius:20px;
 #home h1{
     font-family: 'Bree Serif', serif;
     color:white;
-
-    
-    text-align: center;
-    font-size: 50px;
+     text-align: center;
+    font-size: 3.8rem;
 }
 .fakenews-container{
     margin:72px;
@@ -149,48 +143,66 @@ border-radius:20px;
     display:flex;
     flex-direction: column;
     color: white;
+    align-items: center;
+    justify-content: center;
 }
-#fakenews .box{
+#fakenews .box1{
     border:2px solid black;
-    padding:34px;
-    margin:15px 25px;
+    padding:1em;
+    margin:2em 2em;
+    margin-left:3em;
     border-radius: 28px;
-    /* background: grey; */
     background-color: rgb(3,3,49);
     box-shadow:1px 13px black;
     color:rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
-    height:400px;
-    /* -webkit-clip-path: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%); */
-  /* clip-path: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%); */
+    flex-direction: column;
+    height:28em;
+    width:48em;
+  transition:all 10s ease-in-out .3s;
+
+    
+
+}
+#fakenews .box2{
+    border:2px solid black;
+    padding:1em;
+    margin:2em 2em;
+    margin-left:30em;
+    border-radius: 28px;
+    background-color: rgb(3,3,49);
+    box-shadow:1px 13px black;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height:28em;
+    width:48em;
   transition:all 10s ease-in-out .3s;
 
     
 
 }
 #fakenews .box img{
-    height:260px;
-    /* margin:auto; */
-    margin:32px;
+    height:15rem;
+    margin:1rem;
     display:block;
-    width:500px;
     border-radius: 50px;
+    width:18rem;
 }
 #fakenews .box img:hover{
-    height:360px;
-    /* margin:auto; */
+    height:20rem;
+  
     margin:32px;
     display:block;
-    width:600px;
+    width:23rem;
 }
 #fakenews .box p{
-    margin:80px;
-    font-size: 1.3rem;
+    margin:3rem;
+    font-size: 1rem;
     font-family: 'PT Sans', sans-serif;
 }
 #fakenews .box li{
-    font-size: 1.3rem;
+    font-size: 1rem;
     
     font-family: 'PT Sans', sans-serif;
 }
@@ -198,7 +210,14 @@ border-radius:20px;
     margin: 56px -48px;
 
 }
-section #home
+
+
+.one{
+    display:flex;
+    flex-direction: row;
+}
+
+/* section #home */
 
 /* utility classes */
 .h-primary{
@@ -207,7 +226,7 @@ section #home
     font-family: 'Bree Serif', serif;
 }
 .h-secondary{
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding:12px;  /* hr trf se padding 12px*/
     font-family: 'Bree Serif', serif;
 }
@@ -220,15 +239,11 @@ section #home
 
 
 
-/* @import "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"; */
 
-#login{
-    /* margin:50px; */
+#detection{
+   
     background: url('../Assets/Images/keyboard.jpg') no-repeat center center/cover;
-    /* padding:18%; */
-    /* display:block; */
     font-family: sans-serif;
-    /* background-size: cover; */
     height:700px;
     width:100%;
     display:flex;
@@ -237,13 +252,9 @@ section #home
     justify-items: center;
     
 }
-#logbox{
-    /* margin:50px; */
-    /* background: url('Assets/keyboard.jpg') no-repeat center center/cover; */
-    /* padding:18%; */
-    /* display:block; */
+#detectbox{
+
     font-family: sans-serif;
-    /* background-size: cover; */
     height:700px;
     width:100%;
     display:flex;
@@ -252,31 +263,22 @@ section #home
     justify-items: center;
     
 }
-#login::before{
+#detection::before{
     content:"";
-    /* background:url('Assets/f1.jpeg') no-repeat center center/cover; */
-    /* background-color: rgb(133, 86, 86);; */
     position:absolute;
     height:100%;
     top:0px;
     left:0px;
     width:100%;
     z-index:-1;
-    /* filter: invert(10%); */
     opacity:0.89;
 }
-#login h1{
-    /* float:right; */
+#detection h1{
     font-size: 70px;
     color:white;
     display:block;
-    /* border-bottom: 2px solid #4caf50; */
     height:50px;
-    /* margin-bottom: 50px; */
-    /* padding:13px; */
     font-family: 'Bree Serif', serif;
-    /* color:white; */
-    /* font-size: 50px; */
     margin-left: 35px;
     margin-top: 170px;
     margin-bottom: 120px;
@@ -284,21 +286,21 @@ section #home
     text-align: center;
 }
 
-.login-box{
+.detection-box{
     display:flex;
     flex-direction: column;
     width:70%;
     align-items: center;
     justify-content: center;
 }
-.login-box h2{
+.detection-box h2{
     font-family: 'Bree Serif', serif;
     color:white;
     margin:23px 23px;
 }
 .textbox{
     display:block;
-    width: 38%;;
+    width: 100%;
     overflow:hidden;
     font-size: 20px;
     padding:8px 0px;
@@ -320,7 +322,7 @@ section #home
 }
 .btn{
     display:block;
-    width:40%;
+    width:100%;
     background: none;
     border:2px solid #4caf50;
     color:white;
@@ -335,10 +337,9 @@ section #home
     color:white;
 }
 .result{
-    /* border:2px solid blue; */
     width:900px;
     height:600px;
-    margin:0px 50px;
+    margin:0 2rem;
     margin-top:1px !important;
     margin-bottom:1px !important;
 }
@@ -350,13 +351,11 @@ section #home
     margin-top:10px;
 }
 .result_box{
-    /* border:2px solid blue; */
     width:100%;
     height: 22%;
     margin:0px 0px;
 }
 .result img{
-    /* border:2px solid blue; */
     width:95%;
     padding: 2px 9px;
     height:50%;
@@ -377,26 +376,20 @@ color:white;
 visibility:hidden;
 }
 #stats{
-    /* margin:1px; */
+    
     background: url('../Assets/Images/keyboard.jpg') no-repeat center center/cover;
-    /* padding:18%; */
-    /* display:block; */
     font-family: sans-serif;
-    /* background-size: cover; */
-    height:2000px;
+    height:280rem;
     width:100%;
     display:flex;
     flex-direction: column;
     margin-left: 0;
-    /* flex-direction: column; */
-    /* align-items: center; */
     justify-items: center;
     align-items: center;
     
 }
 
 #stats h1{
-    /* margin:37px; */
     color:white;
     font-size: 50px;
     margin-left: 50px;
@@ -407,36 +400,31 @@ visibility:hidden;
 .statistics{
 display: flex;
 flex-direction: column;
+margin-bottom: 5rem;
 }
-.stats_row{
-display:flex;
-margin-top:40px;
-}
-.graph{
-    margin:10px 10px;
-    padding:10px 10px;
-}
-.left{
-margin-left: 150px;
-}
-.right{
-margin-right: 150px;
-}
-.graph img{
-width:100%;
-height: 100%;
-transition:0.5s;
+
+.statistics img{
+width:70vw;
+height: 30rem;
+/* transition:0.5s; */
 overflow: hidden;
 
 
 }
-.graph img:hover{
-    transform:scale(1.45);
-    cursor:zoom-in;
+#graphtwo img{
+    height:40rem;
+}
+.statistics img:hover{
+
     z-index:1;
     box-shadow:0 25px 40px rgba(0,0,0,0.5);
+    
 }
-
+.disc{
+    
+    color:white;
+    background-color: black;
+}
 /* Below code is to remove the rightside whitespace */
 html,body{
     width:100%;
@@ -455,7 +443,7 @@ flex-direction:column;
 
 }
 #about_us h1{
-    margin:37px;
+    margin:1rem;
     color:white;
     font-size: 5rem;
     text-align: center;
@@ -465,8 +453,8 @@ flex-direction:column;
 .about{
 display:flex;
 flex-direction:column;
-margin: 50px 34px;
-padding:17px 34px;
+margin: 1rem 7rem;
+padding:2rem 2rem;
 justify-content: center;
 align-items: center;
 }
@@ -474,13 +462,13 @@ align-items: center;
 .row{
 display:flex;
 flex-direction:row;
-margin: 23px 23px;
+margin: 1rem 1rem;
 }
 
 .member{
     display:flex;
     flex-direction:column;
-    margin: 23px 23px;
+    margin: 1rem 2rem;
 
 }
 .member h2{
@@ -502,10 +490,14 @@ margin: 23px 23px;
     justify-content: center;
 }
 .member img{
-    width:20rem;
-    height:22rem;
+    width:15rem;
+    height:17rem;
     border: 5px solid #fff;
 
+}
+.one_row_of_member{
+    display:flex;
+    flex-direction:column;
 }
 .links a img{
     width: 30px;
@@ -517,7 +509,6 @@ margin: 23px 23px;
 }
 #contact_us{
     display:flex;
-    /* flex-direction:column; */
     align-items: center;
     justify-content: center;
     background:url("../Assets/Images/contactbg.png");
@@ -526,9 +517,7 @@ margin: 23px 23px;
 .contact{
     margin:34px 34px;
     padding:23px 34px;
-    border:5px solid  #130468;
-    /* background-color: #130468; */
-    
+    border:5px solid  #130468;    
     width:50rem;
     display:flex;
     flex-direction: column;
@@ -573,7 +562,6 @@ margin: 23px 23px;
 }
 .bttn{
     display:block;
-    /* width:40%; */
     background: none;
     border:2px solid #130468;
     color:white;
@@ -587,3 +575,6 @@ margin: 23px 23px;
     background-color: #130468;
     color:white;
 }
+
+
+ 

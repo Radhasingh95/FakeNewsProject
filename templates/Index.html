@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake News Detection</title>
     <link rel="stylesheet" href="../static/css/style.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,15 +25,15 @@
 <body>
 
     <nav id="navbar">
-        <div id="logo">
-            <!-- Just for covering space -->
-        </div>
+         <div id="logo"> 
+             <!-- Just for covering space  -->
+        </div> 
 
         <ul>
             <li class="item"> <a href="#home" >Home </a> </li>
             <li class="item"> <a href="#fakenews">Introduction </a> </li>
-            <li class="item"> <a href="#login">Detection </a> </li>
-            <li class="item"> <a href="#stats">Statistics </a> </li>
+            <li class="item"> <a href="#detection">Detection </a> </li>
+           <li class="item"> <a href="#stats">Statistics </a> </li>
             <li class="item"> <a href="#about_us">About us </a> </li>
             <li class="item"> <a href="#contact_us">Contact us</a> </li>
         </ul>
@@ -48,19 +49,25 @@
         <div id="fakenews">
             <br><br><br>
             <h1 class="h-secondary center">Fake News</h1>
-            <div class="box">
+            <div class="mainbox">
+                <div class="box1 box">
                 <h2 class="h-secondary center">What is a Fake News??</h2>
+                <div class="one">
                 <img src="../static/Assets/Images/hacker.jpg" alt="">
+           
                 <p class="center">Fake news is any false or misleading information presented as news and communicated in
                     formats spanning spoken and written.
                     Fake news can reduce the impact of real news by competing with it and has the 
                     potential to undermine trust in serious media coverage.
                     <!-- Fake news brainwashes people overtime. -->
-                </p>
+                </p></div>
             </div>
-            <div class="box">
+        
+            <div class="box2 box">
                 <h2 class="h-secondary center">Impact of Fake News</h2>
+                <div class="one">
                 <img src="../static/Assets/Images/guy.jpg" alt="">
+           
                 <p class="center">
                 <ul>
                     <li>Financial impacts or impacts on our health</li>
@@ -71,21 +78,24 @@
                 </ul>
 
                 </p>
+            </div></div>
+            <div class="box1 box">
+                <h2 class="h-secondary center">About this Website</h2>
+                <div class="one">
+                    <img src="../static/Assets/Images/turn.jpg" alt="">
+                    <p class="center">Fake News Detection Website is utility tool where one can check whether the news provided by him/her through its url 
+                        or content is Fake or Real and also 
+                         one can get to see the statistics of fake news year wise, country wise and platform wise.</p>
+                </div>
             </div>
         </div>
-        <!-- </section>
-<section class="detection">
-    <form action="backened.php">
-        Input the url of article :
-        <br>
-        <textarea name="url" placeholder="url of news"  cols="30" rows="10"></textarea>
-    </form> -->
+    </div>
     </section>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
 
-    <section id=login>
-        <!-- <h1 class="h-primary">Detection</h1> -->
+    <section id=detection>
+        
         
         
         
@@ -96,25 +106,27 @@
             </div>
             <img src="../static/Assets/Images/left.jpg" alt="">
         </div>
-        <div id=logbox>
+        <div id=detectbox>
                 <h1 >Detection</h1>
-                <div class="login-box ">
+                <form action="" method="post">
+                <div class="detection-box ">
                     <div class="textbox">
-                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
-                    <input type="url" placeholder="Provide url here" name="" value="">
+                   
+                    <input type="url" placeholder="Enter url" name="" value="">
                     
                 </div>
                 <button class="btn" type="submit" value="Submit">Submit</button>
                 <h2>OR</h2>
             </div>
-            <div class="login-box">
+            <div class="detection-box">
                 <div class="textbox">
-                    <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
-                    <input type="text" placeholder="Content of Article" name="" value="">
+                    
+                    <input type="text" placeholder="Enter Content" name="" value="">
                     
                 </div>
                 <button class="btn" type="submit" value="Submit">Submit</button>
             </div>
+        </form>
         </div>
         <div class="result" id="real">
             <h2>Is it Real?</h2>
@@ -124,27 +136,41 @@
              <img src="../static/Assets/Images/right.jpg" alt="">
         </div>
     </section>
+    <div class="disc">
+       <b> Source of datasets used in the above detection models:</b> <br>
+       www.kaggle.com
+        <br>
+       <b> Disclaimer: </b> The datasets used to train the model has been extracted in April, 2021.The accuracy of the above model is <b> 94.5%</b>. <br> Therefore it does not impose its 
+        result to completely accurate or declare any website or news source to be fraud.
+    </div>
+       
         <section id="stats">
             <h1>Statistics</h1>
             <div class="statistics">
-             <div class="stats_row">
-                 <div class="graph left"><img  src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on television versus print media worldwide in 2019 (2).jpg" alt=""></div>
-                 <div class="graph right"><img   src="../static/Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in different countries 2020 (6).jpg" alt=""></div>
+             
+                 <div ><img  src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on television versus print media worldwide in 2019 (2).jpg" alt="" class="zoom" ></div>
+                 <div id="graphtwo" ><img   src="../static/Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in different countries 2020 (6).jpg" alt="" class="zoom"></div>
                  
-                </div>
-                <div class="stats_row">
-                    <div class="graph left"><img src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in 2020 (1).jpg" alt=""></div>
-                    <div class="graph right"><img   src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in different countries 2020 (5).jpg" alt=""></div>
-                </div>
-                <div class="stats_row">
-                    <div class="graph left"><img   src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in selected countries worldwide as of June 2020.jpg" alt=""></div>
-                    <div class="graph right"><img   src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on print media countruwise in 2019.png" alt=""></div>
+
+                
+                    <div ><img src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in 2020 (1).jpg" alt="" class="zoom"></div>
+                    <div ><img   src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in different countries 2020 (5).jpg" alt="" class="zoom"></div>
+               
+                
+                    <div ><img   src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in selected countries worldwide as of June 2020.jpg" alt="" class="zoom"></div>
+                    <div ><img   src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on print media countruwise in 2019.png" alt="" class="zoom"></div>
                     
-                </div>
-                <div class="stats_row">
-                    <div class="graph left"><img  src="../static/Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in 2020.jpg" alt=""></div>
-                    <div class="graph right"><img  src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on television countruwise in 2019.jpg" alt=""></div>
-             </div>
+               
+                    <div ><img  src="../static/Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in 2020.jpg" alt="" class="zoom"></div>
+                    <div ><img  src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on television countruwise in 2019.jpg" alt="" class="zoom"></div>
+                    <br><br>
+                    <br>
+                    <br>
+                    <div class="disc"><b> Source:</b> Statista.com <br>
+
+                        <b> Disclaimer:</b> The information of these graphs have been extracted through online surveys performed by various organizations. <br> Therefore it does not impose its results to be completely accurate or impose it on 
+                        other countries or in any way indicate future results.</div>
+             
             </div>
         </section>
     
@@ -152,10 +178,10 @@
             <h1>About Us</h1>
             <div class="about">
                 <div class="row">
-                    
+                 <div class="one_row_of_member">   
                 <!-- Radha  -->
                 <div class="member">
-                    <img src="../static/Assets/Images/radha.jpg" alt="">
+                    <img src="../static/Assets/Images/radha1.jpg" alt="">
                     <h2>Radha Singh</h2>
                     <p>Front End Developer</p>
                     <div class="links">
@@ -180,12 +206,12 @@
                         <a href="https://www.linkedin.com/in/pratyakshagupta-047"><img src="../static/Assets/Images/linkedin.svg" alt=""></a>
                         <a href="https://instagram.com/pratyakshagupta.jul"><img src="../static/Assets/Images/instagram.svg" alt=""></a>
                     </div>
-                </div>
+                </div></div>
 
 
                 <!-- Priya  -->
-                <!-- About me - A chaotic explorer wandering in the maze of technology. -->
-
+                
+                <div class="one_row_of_member">
                 <div class="member">
                     <img src="../static/Assets/Images/priya1.jpg" alt="">
                     <h2>Priya Sharma</h2>
@@ -202,7 +228,7 @@
 
                 <!-- Muskan  -->
                 <div class="member">
-                    <img src="../static/Assets/Images/Muskan1.jpeg" alt="">
+                    <img src="../static/Assets/Images/muskan.jfif" alt="">
                     <h2>Muskan Gupta</h2>
                     <p>Backend Developer</p>
                     <div class="links">
@@ -212,7 +238,7 @@
                         <a href="https://www.linkedin.com/in/muskan-gupta-a05523204"><img src="../static/Assets/Images/linkedin.svg"   alt=""></a>
                         <a href="https://instagram.com/1218.muskan"><img src="../static/Assets/Images/instagram.svg" alt=""></a>
                     </div>
-                </div>
+                </div></div>
             </div>
         </div>
     </section>
