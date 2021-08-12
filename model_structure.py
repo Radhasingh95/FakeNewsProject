@@ -14,16 +14,15 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
+import pickle
 
-from google.colab import drive
-drive.mount('/content/drive')
 
 #reading the train file
-df=pd.read_csv("/content/drive/MyDrive/Colab Notebooks/Train.csv")
+df=pd.read_excel("Static/DatasetsUsed/Train.xlsx")
 
 labels=df.Label
-labels.head()
-df.shape
+#labels.head()
+#df.shape
 
 """x_ans is the variable used for storing the user output.For right now,have put a decoy value
 
@@ -39,10 +38,14 @@ tfidf_vectorizer=TfidfVectorizer(stop_words='english', max_df=0.8)
 tfidf_train=tfidf_vectorizer.fit_transform(x_train) 
 tfidf_test=tfidf_vectorizer.transform(x_ans)
 
-#Initialize a PassiveAggressiveClassifier
+#Initialize a LogisticRegressor
 model= LogisticRegression()
 model.fit(tfidf_train,y_train)
 
 y_pred=model.predict(tfidf_test)
+#y_pred[0]
 
-y_pred[0]
+file=open("model.pck",'wb')
+pickle.dump(model,file)
+file.close()
+

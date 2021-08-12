@@ -11,9 +11,9 @@ function showreal()
     document.getElementById("realpara").style.visibility="visible";
 }
 // val=1;
-if (val==0){
+if (prediction==0){
     showfake();
 }
-else if(val==1){
+else if(prediction==1){
     showreal();
 }
