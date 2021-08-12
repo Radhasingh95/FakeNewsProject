@@ -108,11 +108,11 @@
         </div>
         <div id=detectbox>
                 <h1 >Detection</h1>
-                <form action="" method="post">
+                <form action="" method="POST">
                 <div class="detection-box ">
                     <div class="textbox">
                    
-                    <input type="url" placeholder="Enter url" name="" value="">
+                    <input type="url" placeholder="Enter url" name="NewsUrl" value="">
                     
                 </div>
                 <button class="btn" type="submit" value="Submit">Submit</button>
@@ -121,7 +121,7 @@
             <div class="detection-box">
                 <div class="textbox">
                     
-                    <input type="text" placeholder="Enter Content" name="" value="">
+                    <input type="text" placeholder="Enter Content" name="content" value="">
                     
                 </div>
                 <button class="btn" type="submit" value="Submit">Submit</button>
@@ -141,7 +141,7 @@
        <b> Source of datasets used in the above detection models:</b> <br>
        www.kaggle.com
         <br>
-       <b> Disclaimer: </b> The datasets used to train the model has been extracted in April, 2021.The accuracy of the above model is <b> 94.5%</b>. <br> Therefore it does not impose its 
+       <b> Disclaimer: </b> The datasets used to train the model has been extracted in April, 2021.The accuracy of the above model is <b> 94.5%<br>Therefore it does not impose its 
         result to completely accurate or declare any website or news source to be fraud.
     </div>
        
@@ -270,5 +270,12 @@
 </body>
 
 
-<script src="../static/JavaScript/detect.js"></script>
+<script type="text/javascript" src="../static/JavaScript/detect.js"></script>
+<script type="text/javascript">
+    {% if prediction== [1] %}
+        showreal();
+    {% elif prediction== [0] %}
+        showfake();
+    {% endif %}
+ </script>
 </html>
