@@ -94,15 +94,7 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
 
-    <section id="detection">
-        
-        {% if scroll %}
-            <script>
-                document.getElementById('{{ scroll }}').scrollIntoView();
-            </script>
-        {% endif %}
-        
-        
+    <section id="detection"> 
         <div class="result" id="fake">
             <h2>Is it Fake?</h2>
             <div class="result_box">
@@ -119,7 +111,7 @@
                     <input type="url" placeholder="Enter url" name="NewsUrl" value="">
                     
                 </div>
-                <button class="btn" type="submit" value="Submit">Submit</button>
+                <button class="btn" name="Submit_B" type="submit" value="URLnews">Submit</button>
                 <h2>OR</h2>
             </div>
             <div class="detection-box">
@@ -128,7 +120,7 @@
                     <input type="text" placeholder="Enter Content" name="content" value="">
                     
                 </div>
-                <button class="btn" type="submit" value="Submit">Submit</button>
+                <button class="btn" name="Submit_B" type="submit" value="newsContent">Submit</button>
             </div>
         </form>
         </div>
@@ -191,7 +183,7 @@
                     <p>Front End Developer</p>
                     <div class="links">
 
-                        <a href="https://rsradhasingh12@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="mailto:rsradhasingh12@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
                         <a href="https://gitHub.com/"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
                         <a href="https://www.linkedin.com/in/radhasingh210"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}" alt=""></a>
                         <a href="https://instagram.com/"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
@@ -206,7 +198,7 @@
                         ML Engineer</p>
                     <div class="links">
 
-                        <a href="https://pratyakshagupta.jul@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="mailto:pratyakshagupta.jul@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
                         <a href="https://gitHub.com/pratyaksha-047"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
                         <a href="https://www.linkedin.com/in/pratyakshagupta-047"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}" alt=""></a>
                         <a href="https://instagram.com/pratyakshagupta.jul"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
@@ -224,7 +216,7 @@
                     </p>
                     <div class="links">
 
-                        <a href="https:// priya003btcsai20@igdtuw.ac.in"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="mailto:priya003btcsai20@igdtuw.ac.in"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
                         <a href="https://gitHub.com/DevPriSha"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
                         <a href="https://www.linkedin.com/in/devprisha"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}" alt=""></a>
                         <a href="https://instagram.com/priya.mamta.sharma"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
@@ -238,7 +230,7 @@
                     <p>Backend Developer</p>
                     <div class="links">
 
-                        <a href="https://1218.muskangupta@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="mailto:1218.muskangupta@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
                         <a href="https://gitHub.com/1218muskan"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
                         <a href="https://www.linkedin.com/in/muskan-gupta-a05523204"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}"   alt=""></a>
                         <a href="https://instagram.com/1218.muskan"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
@@ -248,10 +240,6 @@
         </div>
     </section>
 
-    <div>
-        <p>{{sent}}</p>
-     
-     </div>
 
     <form action="/" method="POST">
     <section id="contact_us">
@@ -271,18 +259,19 @@
 
             </div>
             <div class="button">
-                <button class="bttn" type="submit" value="Submit">Submit</button>
+                <button class="bttn" name="Submit_B" type="submit" value="message">Submit</button>
             </div>
         </div>
     </section>
 </form>
 
-<div>
-   <p>{{sent}}</p>
+{% if scroll %}
+<script>
+    document.getElementById('{{ scroll }}').scrollIntoView();
+</script>
+{% endif %}
 
-</div>
 </body>
-
 
 <script type="text/javascript" src="{{url_for('static', filename='JavaScript/detect.js')}}"></script>
 <script type="text/javascript">
@@ -292,4 +281,5 @@
         showfake();
     {% endif %}
  </script>
+
 </html>
