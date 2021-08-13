@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake News Detection</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
                 <div class="box1 box">
                 <h2 class="h-secondary center">What is a Fake News??</h2>
                 <div class="one">
-                <img src="../static/Assets/Images/hacker.jpg" alt="">
+                <img src="{{url_for('static', filename='Assets/Images/hacker.jpg')}}" alt="">
            
                 <p class="center">Fake news is any false or misleading information presented as news and communicated in
                     formats spanning spoken and written.
@@ -66,7 +66,7 @@
             <div class="box2 box">
                 <h2 class="h-secondary center">Impact of Fake News</h2>
                 <div class="one">
-                <img src="../static/Assets/Images/guy.jpg" alt="">
+                <img src="{{url_for('static', filename='Assets/Images/guy.jpg')}}" alt="">
            
                 <p class="center">
                 <ul>
@@ -82,7 +82,7 @@
             <div class="box1 box">
                 <h2 class="h-secondary center">About this Website</h2>
                 <div class="one">
-                    <img src="../static/Assets/Images/turn.jpg" alt="">
+                    <img src="{{url_for('static', filename='Assets/Images/turn.jpg')}}" alt="">
                     <p class="center">Fake News Detection Website is utility tool where one can check whether the news provided by him/her through its url 
                         or content is Fake or Real and also 
                          one can get to see the statistics of fake news year wise, country wise and platform wise.</p>
@@ -108,7 +108,7 @@
             <div class="result_box">
                 <p id="fakepara" >Yes, it is Fake!!</p>
             </div>
-            <img src="../static/Assets/Images/left.jpg" alt="">
+            <img src="{{url_for('static', filename='Assets/Images/left.jpg')}}" alt="">
         </div>
         <div id=detectbox>
                 <h1 >Detection</h1>
@@ -137,7 +137,7 @@
             <div class="result_box">
                 <p id="realpara" >Yes, it is Real!!</p>
             </div>
-             <img src="../static/Assets/Images/right.jpg" alt="">
+             <img src="{{url_for('static', filename='Assets/Images/right.jpg')}}" alt="">
         </div>
 
     </section>
@@ -153,21 +153,21 @@
             <h1>Statistics</h1>
             <div class="statistics">
              
-                 <div ><img  src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on television versus print media worldwide in 2019 (2).jpg" alt="" class="zoom" ></div>
-                 <div id="graphtwo" ><img   src="../static/Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in different countries 2020 (6).jpg" alt="" class="zoom"></div>
+                 <div ><img  src="{{url_for('static', filename='Assets/StatsGraphs/Share of adults who have witnessed fake news on television versus print media worldwide in 2019 (2).jpg')}}" alt="" class="zoom" ></div>
+                 <div id="graphtwo" ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in different countries 2020 (6).jpg')}}" alt="" class="zoom"></div>
                  
 
                 
-                    <div ><img src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in 2020 (1).jpg" alt="" class="zoom"></div>
-                    <div ><img   src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in different countries 2020 (5).jpg" alt="" class="zoom"></div>
+                    <div ><img src="{{url_for('static', filename='Assets/StatsGraphs/Main source of information about news and current affairs in 2020 (1).jpg')}}" alt="" class="zoom"></div>
+                    <div ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Main source of information about news and current affairs in different countries 2020 (5).jpg')}}" alt="" class="zoom"></div>
                
                 
-                    <div ><img   src="../static/Assets/StatsGraphs/Main source of information about news and current affairs in selected countries worldwide as of June 2020.jpg" alt="" class="zoom"></div>
-                    <div ><img   src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on print media countruwise in 2019.png" alt="" class="zoom"></div>
+                    <div ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Main source of information about news and current affairs in selected countries worldwide as of June 2020.jpg')}}" alt="" class="zoom"></div>
+                    <div ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Share of adults who have witnessed fake news on print media countruwise in 2019.png')}}" alt="" class="zoom"></div>
                     
                
-                    <div ><img  src="../static/Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in 2020.jpg" alt="" class="zoom"></div>
-                    <div ><img  src="../static/Assets/StatsGraphs/Share of adults who have witnessed fake news on television countruwise in 2019.jpg" alt="" class="zoom"></div>
+                    <div ><img  src="{{url_for('static', filename='Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in 2020.jpg')}}" alt="" class="zoom"></div>
+                    <div ><img  src="{{url_for('static', filename='Assets/StatsGraphs/Share of adults who have witnessed fake news on television countruwise in 2019.jpg')}}" alt="" class="zoom"></div>
                     <br><br>
                     <br>
                     <br>
@@ -186,30 +186,30 @@
                  <div class="one_row_of_member">   
                 <!-- Radha  -->
                 <div class="member">
-                    <img src="../static/Assets/Images/radha1.jpg" alt="">
+                    <img src="{{url_for('static', filename='Assets/Images/radha1.jpg')}}" alt="">
                     <h2>Radha Singh</h2>
                     <p>Front End Developer</p>
                     <div class="links">
 
-                        <a href="https://rsradhasingh12@gmail.com"><img src="../static/Assets/Images/mail.svg" alt=""></a>
-                        <a href="https://gitHub.com/"><img src="../static/Assets/Images/github.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/in/radhasingh210"><img src="../static/Assets/Images/linkedin.svg" alt=""></a>
-                        <a href="https://instagram.com/"><img src="../static/Assets/Images/instagram.svg" alt=""></a>
+                        <a href="https://rsradhasingh12@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="https://gitHub.com/"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
+                        <a href="https://www.linkedin.com/in/radhasingh210"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}" alt=""></a>
+                        <a href="https://instagram.com/"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
                     </div>
                 </div>
 
                 <!-- Pratyaksha  -->
                 <div class="member">
-                    <img src="../static/Assets/Images/pratyaksha.jpeg" alt="">
+                    <img src="{{url_for('static', filename='Assets/Images/pratyaksha.jpeg')}}" alt="">
                     <h2>Pratyaksha Gupta</h2>
                     <p>
                         ML Engineer</p>
                     <div class="links">
 
-                        <a href="https://pratyakshagupta.jul@gmail.com"><img src="../static/Assets/Images/mail.svg" alt=""></a>
-                        <a href="https://gitHub.com/pratyaksha-047"><img src="../static/Assets/Images/github.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/in/pratyakshagupta-047"><img src="../static/Assets/Images/linkedin.svg" alt=""></a>
-                        <a href="https://instagram.com/pratyakshagupta.jul"><img src="../static/Assets/Images/instagram.svg" alt=""></a>
+                        <a href="https://pratyakshagupta.jul@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="https://gitHub.com/pratyaksha-047"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
+                        <a href="https://www.linkedin.com/in/pratyakshagupta-047"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}" alt=""></a>
+                        <a href="https://instagram.com/pratyakshagupta.jul"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
                     </div>
                 </div></div>
 
@@ -218,51 +218,56 @@
                 
                 <div class="one_row_of_member">
                 <div class="member">
-                    <img src="../static/Assets/Images/priya1.jpg" alt="">
+                    <img src="{{url_for('static', filename='Assets/Images/priya1.jpg')}}" alt="">
                     <h2>Priya Sharma</h2>
                     <p>DevOps Engineer
                     </p>
                     <div class="links">
 
-                        <a href="https:// priya003btcsai20@igdtuw.ac.in"><img src="../static/Assets/Images/mail.svg" alt=""></a>
-                        <a href="https://gitHub.com/DevPriSha"><img src="../static/Assets/Images/github.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/in/devprisha"><img src="../static/Assets/Images/linkedin.svg" alt=""></a>
-                        <a href="https://instagram.com/priya.mamta.sharma"><img src="../static/Assets/Images/instagram.svg" alt=""></a>
+                        <a href="https:// priya003btcsai20@igdtuw.ac.in"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="https://gitHub.com/DevPriSha"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
+                        <a href="https://www.linkedin.com/in/devprisha"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}" alt=""></a>
+                        <a href="https://instagram.com/priya.mamta.sharma"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
                     </div>
                 </div>
 
                 <!-- Muskan  -->
                 <div class="member">
-                    <img src="../static/Assets/Images/muskan.jfif" alt="">
+                    <img src="{{url_for('static', filename='Assets/Images/muskan.jfif')}}" alt="">
                     <h2>Muskan Gupta</h2>
                     <p>Backend Developer</p>
                     <div class="links">
 
-                        <a href="https://1218.muskangupta@gmail.com"><img src="../static/Assets/Images/mail.svg" alt=""></a>
-                        <a href="https://gitHub.com/1218muskan"><img src="../static/Assets/Images/github.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/in/muskan-gupta-a05523204"><img src="../static/Assets/Images/linkedin.svg"   alt=""></a>
-                        <a href="https://instagram.com/1218.muskan"><img src="../static/Assets/Images/instagram.svg" alt=""></a>
+                        <a href="https://1218.muskangupta@gmail.com"><img src="{{url_for('static', filename='Assets/Images/mail.svg')}}" alt=""></a>
+                        <a href="https://gitHub.com/1218muskan"><img src="{{url_for('static', filename='Assets/Images/github.svg')}}" alt=""></a>
+                        <a href="https://www.linkedin.com/in/muskan-gupta-a05523204"><img src="{{url_for('static', filename='Assets/Images/linkedin.svg')}}"   alt=""></a>
+                        <a href="https://instagram.com/1218.muskan"><img src="{{url_for('static', filename='Assets/Images/instagram.svg')}}" alt=""></a>
                     </div>
                 </div></div>
             </div>
         </div>
     </section>
 
-    <form action="" method="post">
+    <div>
+        <p>{{sent}}</p>
+     
+     </div>
+
+    <form action="/" method="POST">
     <section id="contact_us">
         <div class="contact">
             <h2>Get In Touch</h2>
             <div class="form">
-                <input type="text" placeholder="Enter Your Name" name="" value="">
+                <input type="text" placeholder="Enter Your Name" name="Name" value="">
             </div>
                 <div class="form">
-                    <input type="url" placeholder="Enter Your Phone No." name="" value="">
+                    <input type="tel" placeholder="Enter Your Phone No." name="Phone" value="">
                 </div>
                     <div class="form">
-                        <input type="url" placeholder="Enter Your Email Id" name="" value="">
+                        <input type="email" placeholder="Enter Your Email Id" name="Email" value="">
                     </div>
                         <div class="form">
-                <input type="text" placeholder="Enter Your Feedback" name="" value="">
+                <input type="text" placeholder="Enter Your Feedback" name="Feedback" value="">
 
             </div>
             <div class="button">
@@ -271,10 +276,15 @@
         </div>
     </section>
 </form>
+
+<div>
+   <p>{{sent}}</p>
+
+</div>
 </body>
 
 
-<script type="text/javascript" src="../static/JavaScript/detect.js"></script>
+<script type="text/javascript" src="{{url_for('static', filename='JavaScript/detect.js')}}"></script>
 <script type="text/javascript">
     {% if prediction== [1] %}
         showreal();
