@@ -249,10 +249,10 @@
                 <input type="text" placeholder="Enter Your Name" name="Name" value="">
             </div>
                 <div class="form">
-                    <input type="tel" placeholder="Enter Your Phone No." name="Phone" value="">
+                    <input type="tel" placeholder="Enter Your Phone No." name="" value="">
                 </div>
                     <div class="form">
-                        <input type="email" placeholder="Enter Your Email Id" name="Email" value="">
+                        <input type="email" placeholder="Enter Your Email Id" name="" value="">
                     </div>
                         <div class="form">
                 <input type="text" placeholder="Enter Your Feedback" name="Feedback" value="">
@@ -275,9 +275,9 @@
 
 <script type="text/javascript" src="{{url_for('static', filename='JavaScript/detect.js')}}"></script>
 <script type="text/javascript">
-    {% if prediction== [1] %}
+    {% if (prediction)== [1] %}
         showreal();
-    {% elif prediction== [0] %}
+    {% elif (prediction)== [0] %}
         showfake();
     {% endif %}
  </script>
