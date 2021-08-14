@@ -263,9 +263,12 @@
             <div class="button">
                 <button class="bttn" name="Submit_B" type="submit" value="message">Submit</button>
             </div>
-            <div class="mail">
-            Response recorded. Thanks for feedback.
-        </div>
+
+            {% if send=="success" %}
+                <div class="mail">Response recorded. Thanks for feedback. </div>
+            {% elif send=="not success" %}
+                <div class="mail">Feedback can't be empty.Enter some feedback </div>
+            {% endif %}
         </div>
         
         

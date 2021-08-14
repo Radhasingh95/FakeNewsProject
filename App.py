@@ -88,11 +88,8 @@ def get_val():
             text = request.form.get('content')
             return render_template('Index.html', prediction=Predict(text) , scroll="detection")
 
-        elif request.form["Submit_B"]=="message":
-            feedback();
-            return render_template('Index.html', scroll="contact_us")
 
-        else:
+        elif request.form["Submit_B"]=="URLnews":
             g = Goose()
             userLink = str(request.form.get('NewsUrl'))
             text = g.extract(url=userLink)
@@ -102,6 +99,16 @@ def get_val():
                 scraped_text = text.title
 
             return render_template('Index.html', prediction=Predict(scraped_text), scroll='detection')
+
+
+        elif request.form["Submit_B"]=="message":
+            if request.form.get('Feedback'):
+                feedback();
+                return render_template('Index.html', scroll="contact_us", send="success")
+
+            else:
+                return render_template('Index.html', scroll="contact_us", send="not success")
+
 
     return render_template('Index.html')
 
